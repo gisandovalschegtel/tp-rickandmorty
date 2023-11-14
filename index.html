@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/393bcbc577.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick and Morty</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="header">
+    <div class="barra">
+      <p class="logo">Rick and Morty</p>
+      <ul class="filtros">
+        <li id="todos">Todos</li>
+        <li id="mujeres">Mujer</li>
+        <li id="hombres">Hombre</li>
+        <li id="sinGenero">Sin genero</li>
+        <li id="noSeSabe">No se sabe</li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <p class="tpersonajes">Total de personajes <span id="total-personajes"></span></p>
+    <div id="raiz"></div>
+
+    <div class="container-paginador">
+      <p class="pag-actual">Pagina actual: <span id="pagina-actual"></span></p>
+      <p class="total-pag">Total de páginas: <span id="total-paginas"></span></p>
+
+      <div class="pagination">
+        <button id="first-page" title="Primera página"><i class="fa-solid fa-backward-fast"
+            style="color:#2c1078;"></i></button>
+        <button id="prev-page" title="Anterior página"><i class="fa-solid fa-caret-left"
+            style="color: #2c1078;"></i></button>
+        <button id="next-page" title="Siguiente página"><i class="fa-solid fa-caret-right"
+            style="color: #2c1078;"></i></button>
+        <button id="last-page" title="Última página"><i class="fa-solid fa-forward-fast"
+            style="color:#2c1078;"></i></button>
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+  <footer class="footer">
+    <p class="text-footer">2023 - Gisela Sandoval Schgtel</p>
+  </footer>
+</body>
+
+</html>
